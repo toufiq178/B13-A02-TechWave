@@ -36,7 +36,9 @@ body {
     font-weight: bold;
 
 }
-
+.section-description{
+    opacity: 0.8;
+}
 .wave-gradient {
     background: var(--gradient-color);
     background-clip: text;
@@ -50,6 +52,7 @@ body {
     color: white;
     font-weight: 700;
     font-size: 1rem;
+    text-align: center;
     padding: 12px 16px;
     cursor: pointer;
 }
@@ -75,7 +78,7 @@ body {
 
 
 
-/* main styles */
+/* header styles */
 
 /* navbar related styles */
 .navbar {
@@ -111,11 +114,45 @@ body {
 }
 
 
+/* banner related styles */
+.banner{
+    background-image: url('../assets/hero-bg.png');
+    width: 100%;
+    max-height: 760px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.banner-container{
+    max-width: 550px;
+    margin: 100px auto;
+    text-align: center;
+}
+.banner-img{
+    width: 350px;
+    height: 350px;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-image: url("/assets/hero-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.banner-img>img{
+    
+    margin: 75px;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 3.75rem;
+}
+.banner-btn-container{
+    margin-top: 24px;
 
-
-
-
-
+}
 
 
 
@@ -124,6 +161,7 @@ body {
 
     .navbar {
         justify-content: space-between;
+        padding: 14px;
     }
 
     .nav-link-container,
@@ -134,6 +172,11 @@ body {
     .nav-menu {
         display: inline-block;
     }
+    .section-title {
+    font-size: 2rem;
+    
+
+}
 
 }
 
