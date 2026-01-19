@@ -18,7 +18,7 @@ body {
     font-family: "Inter", sans-serif;
     color: white;
     background-color: var(--primary-color);
-    
+
 }
 
 main {
@@ -90,7 +90,7 @@ main {
     border: none;
     border-radius: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    
+
 }
 
 .card:hover {
@@ -294,8 +294,53 @@ main {
 }
 
 
+/* featured related styles */
+.featured {
+    background-color: var(--primary-color);
+}
 
+.featured-container {
+    text-align: center;
+    padding-top: 120px;
+}
 
+.featured-card {
+    max-width: 380px;
+    width: 100%;
+    padding: 0;
+}
+
+.featured-card-container {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.featured-card:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: none;
+
+}
+
+.featured-card>iframe {
+    width: 380px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 0;
+}
+
+.featured-card-content {
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.time-container {
+    margin-top: 12px;
+    gap: 12px;
+    color: var(--light-green-color);
+}
 
 
 
@@ -384,13 +429,16 @@ main {
         margin-top: 40px;
 
     }
-    .card{
+
+    .card {
         overflow: scroll;
         scrollbar-width: none;
     }
-    .card{
+
+    .card {
         overflow: auto;
     }
+
     .card1 {
         grid-row: span 1;
     }
@@ -407,6 +455,11 @@ main {
         grid-column: span 1;
     }
 
+    /* /* featured related styles */
+    .featured-card-container {
+        flex-direction: column;
+        
+    }
 }
 
 
@@ -466,10 +519,12 @@ main {
         margin-top: 40px;
 
     }
-    .card{
+
+    .card {
         overflow: scroll;
         scrollbar-width: none;
     }
+
     .card1 {
         grid-row: span 2;
     }
@@ -478,19 +533,22 @@ main {
         grid-row: span 2;
         grid-column: span 1;
     }
+
     .card3 {
         grid-row: span 2;
         grid-column: span 1;
     }
+
     .card4 {
         grid-row: span 1;
         grid-column: span 3;
     }
+
     .card5 {
         grid-row: span 1;
         grid-column: span 3;
     }
 
-    
+
 
 }
