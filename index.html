@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
 </head>
 
@@ -20,13 +23,13 @@
     <header>
         <!-- navbar section start -->
         <nav class="navbar display-flex">
-            <h2 class="section-title">Tech<span class="wave-gradient">Wave</span></h2>
+            <h2 class="section-title ">Tech<span class="wave-gradient  ">Wave</span></h2>
             <ul class="nav-link-container display-flex">
                 <li class="nav-links"> <a href="">About</a></li>
                 <li class="nav-links"> <a href="">Episodes</a></li>
                 <li class="nav-links"> <a href="">Host</a></li>
             </ul>
-            <button class="btn-primary btn-nav">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+            <button class="btn-primary btn-nav ">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
             <div class="nav-menu">
                 <img src="./assets/hamburger-menu.png" alt="">
             </div>
@@ -37,8 +40,8 @@
             <div class="banner-container">
 
                 <div class="banner-img display-flex">
-                    <img src="./assets/microphone.png" alt="microphone-logo">
-                    <div id="new">
+                    <img class="animate-pulse" src="./assets/microphone.png" alt="microphone-logo">
+                    <div id="new" class="animate-bounce">
                         <p>NEW</p>
                     </div>
                 </div>
@@ -157,7 +160,7 @@
                         <div class="featured-card-content">
                             <h4 class="card-title">AI Agents and Superintelligence</h4>
                             <p class="section-description">TED Chris Anderson, Altman discusses the astonishing growth
-                                of AI and shows how models like ChatGPT could soon become extensions of ourselves.</p>
+                                of AI and shows how models like ChatGPT could soon become extensions of ourselves.He also addresses questions of safety, power.</p>
 
                             <div class="time-container display-flex">
                                 <img src="./assets/clock.png" alt="green color clock icon">
@@ -230,15 +233,19 @@
     </main>
 
     <!-- footer section start -->
-    <footer class="display-flex" >
+    <footer class="display-flex">
 
         <div class="footer-container">
             <h2 class="footer-title section-title">Tech<span class="wave-gradient">Wave</span></h2>
             <ul class="footer-social-link-container ">
-                <li class="footer-links display-flex"><a href=""><img src="./assets/spotify.png" alt="spotify icon"></a><span class="section-description">Spotify</span></li>
-                <li class="footer-links display-flex"><a href=""><img src="./assets/apple-podcast.png" alt="apple icon"></a><span class="section-description">Apple Podcasts</span></li>
-                <li class="footer-links display-flex"><a href=""><img src="./assets/youtube-podcast.png" alt="youtube icon"></a> <span class="section-description">YouTube</span></li>
-                <li class="footer-links footer-links4 display-flex"><a href=""><img src="./assets/twitter.png" alt="twitter icon"></a><span class="section-description">Twitter</span></li>
+                <li class="footer-links display-flex"><a href=""><img src="./assets/spotify.png"
+                            alt="spotify icon"></a><span class="section-description">Spotify</span></li>
+                <li class="footer-links display-flex"><a href=""><img src="./assets/apple-podcast.png"
+                            alt="apple icon"></a><span class="section-description">Apple Podcasts</span></li>
+                <li class="footer-links display-flex"><a href=""><img src="./assets/youtube-podcast.png"
+                            alt="youtube icon"></a> <span class="section-description">YouTube</span></li>
+                <li class="footer-links footer-links4 display-flex"><a href=""><img src="./assets/twitter.png"
+                            alt="twitter icon"></a><span class="section-description">Twitter</span></li>
             </ul>
             <p id="copy-right" class="section-description"> &copy; 2026 TechWave Podcast. All rights reserved.</p>
         </div>
