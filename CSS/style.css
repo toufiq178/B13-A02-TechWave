@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
 }
 
 :root {
@@ -262,12 +262,12 @@ main {
 
 
 /* .why Choose related styles */
-.whyChoose {
+.whyChoose-container {
     text-align: center;
     padding: 120px 0;
 }
 
-.whyChoose-container {
+.whyChoose-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 250px);
@@ -295,13 +295,13 @@ main {
 
 
 /* featured related styles */
-.featured {
-    background-color: var(--primary-color);
+.whyChoose {
+    background-color: var(--secondary-color);
 }
 
 .featured-container {
     text-align: center;
-    padding-top: 120px;
+
 }
 
 .featured-card {
@@ -342,9 +342,43 @@ main {
     color: var(--light-green-color);
 }
 
+/* <!-- Meet related styles --> */
+.meet {
+    text-align: center;
+}
 
+.meet-container {
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+    margin-top: 40px;
+}
 
+.meet-container:hover {
+    box-shadow: none;
 
+}
+
+.meet-content>h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.meet-social-link-container {
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.meet-social-link-container>li {
+    list-style: none;
+    display: flex;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -415,12 +449,12 @@ main {
 
 
     /* .why Choose related styles */
-    .whyChoose {
+    .whyChoose-container {
         text-align: center;
         padding: 60px 0;
     }
 
-    .whyChoose-container {
+    .whyChoose-card-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
@@ -455,11 +489,23 @@ main {
         grid-column: span 1;
     }
 
-    /* /* featured related styles */
-    .featured-card-container {
+    /* /* featured related styles */   
+    .featured-card-container ,
+    .meet-container
+    {
         flex-direction: column;
-        
+
     }
+    /* <!-- Meet related styles --> */
+    .meet-content{
+        text-align: center;
+    }
+    .meet-social-link-container{
+        justify-content: center;
+    }
+
+    
+    
 }
 
 
@@ -505,12 +551,12 @@ main {
     }
 
     /* .why Choose related styles */
-    .whyChoose {
+    .whyChoose-container {
         text-align: center;
         padding: 120px 0;
     }
 
-    .whyChoose-container {
+    .whyChoose-card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 200px);
