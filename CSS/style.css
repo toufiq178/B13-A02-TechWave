@@ -21,10 +21,6 @@ body {
 
 }
 
-main {
-    /* background-color: var(--secondary-color); */
-}
-
 :root {
     --primary-color: #1A0B2E;
     --secondary-color: rgba(53, 17, 101, 0.4);
@@ -125,7 +121,8 @@ main {
 
 }
 
-.nav-links {
+.nav-links,
+.footer-links {
     list-style: none;
 }
 
@@ -380,6 +377,39 @@ main {
     justify-content: center;
 }
 
+/* footer related styles */
+footer {
+    background-image: url("../assets/footer-bg.png");
+    background-color: var(--secondary-color);
+    width: 100%;
+    max-width: 1600px;
+    height: 412px;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    
+}
+.footer-title {
+    font-size: 4rem;
+}
+
+.footer-social-link-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.footer-links {
+    gap: 10px;
+}
 
 
 
@@ -489,23 +519,53 @@ main {
         grid-column: span 1;
     }
 
-    /* /* featured related styles */   
-    .featured-card-container ,
-    .meet-container
-    {
+    /* /* featured related styles */
+    .featured-card-container,
+    .meet-container {
         flex-direction: column;
 
     }
+
     /* <!-- Meet related styles --> */
-    .meet-content{
+    .meet-content {
         text-align: center;
     }
-    .meet-social-link-container{
+
+    .meet-social-link-container {
         justify-content: center;
     }
 
-    
-    
+    /* footer related styles */
+    footer {
+        height: 228px;
+        background-size: 165%;
+
+    }
+    .footer-container{
+        max-width: 300px;
+        height: 168px;
+        padding-top: 25px;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-social-link-container {
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+        
+        margin-top: 8px;
+        margin-bottom: 8px;
+        
+    }
+    .footer-links , #copy-right {
+        font-size: 0.8rem;
+    }
+
+   
+
 }
 
 
@@ -594,7 +654,33 @@ main {
         grid-row: span 1;
         grid-column: span 3;
     }
+    /* footer related styles */
+    footer {
+        height: 238px;
+        background-size: 140%;
 
+    }
+    .footer-container{
+        max-width: 300px;
+        height: 168px;
+        padding-top: 25px;
+    }
 
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-social-link-container {
+        
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        
+    }
+    .footer-links4 {
+        grid-column: span 3;
+    }
+   
 
 }
