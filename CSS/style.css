@@ -138,6 +138,7 @@ body {
 
 .nav-menu {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -336,6 +337,12 @@ body {
     margin-top: 12px;
     gap: 12px;
     color: var(--light-green-color);
+    text-align: center;
+    align-items: center;
+}
+.time-container>img{
+    height: 20px;
+    width: 20px;
 }
 
 /* <!-- Meet related styles --> */
@@ -434,7 +441,11 @@ footer {
     }
 
     .nav-menu {
-        display: inline-block;
+        display: inline-block;   
+    }
+    .nav-menu>i:hover{
+        color: var(--light-green-color);
+        
     }
 
 
